@@ -1,0 +1,222 @@
+:root{
+  background-color: black;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Хэдер */
+a{
+  color: white;
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.2s all;
+}
+button:hover{
+  transform: scale(1.1);
+}
+header{
+  width: 100%;
+  height: 768px;
+  background-image: url(./img/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+header section{
+  width: 100%;
+  height: 768px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  display: grid;
+  grid-template-columns: 6fr 5fr 5fr 3fr;
+  grid-template-rows: 3fr 1fr 2fr 2fr 8fr;
+  font-stretch: ultra-condensed;
+  font-weight: bold;
+}
+.logo{
+  align-self: center;
+  margin-left: 20px;
+}
+.logo div:nth-child(1){
+  font-size: 28px;
+  font-weight: 900;
+  transform: scaleY(1.5);
+}
+header li{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.3vw;
+  margin-right: 4%;
+  font-stretch: ultra-condensed;
+}
+li:hover{
+  text-decoration: underline;
+}
+header li:nth-of-type(1){
+  margin-left: 20%
+}
+header ul{
+  grid-column: 2/4;
+  align-self: center;
+}
+header p:nth-of-type(1){
+  grid-column: 2/3;
+  color: #D596BA;
+  transform: scaleY(1.5);
+  align-self: center;
+  font-size: 14px;
+}
+header p:nth-of-type(2){
+  grid-column: 2/3;
+  font-size: 29px;
+  transform: scaleY(1.5);
+  align-self: center;
+  font-weight: 900;
+}
+header p:nth-of-type(3){
+  grid-column: 2/3;
+  margin-top: 16px;
+  color: #97155B;
+}
+header button:nth-of-type(1){
+  width: 80%;
+  border: 1px solid white;
+  background-color: inherit;
+  align-self: center;
+  color: white;
+  height: 55px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  font-size: 16px;
+  font-stretch: ultra-condensed;
+}
+header button:nth-of-type(1)::after{
+  content: url(./img/romb.png);
+  margin-left: 10px;
+  transform: scale(.6);
+  display: inline-block;
+}
+header form:nth-of-type(2) button::after{
+  content: "";
+  margin: 0;
+}
+header form{
+  align-self: center;
+}
+header form:nth-of-type(2){
+  grid-column: 2/3;
+  align-self: flex-start;
+}
+header form:nth-of-type(2) button{
+  width: 70%;
+  border: none;
+  font-size: 25px;
+}
+
+/* Главная часть  */
+main{
+  display: grid;
+  width: 100%;
+  height: 44vw;
+  /* height: 650px; */
+  background-color: #A99494;
+  margin-top: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px
+}
+main a{
+  color: black;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 33vw;
+  transition: 0.2s all;
+}
+main a:hover{
+  transform: scale(1.05);
+}
+.dog{
+  width: 100%;
+  height: 33vw;
+  background-color: white;
+
+  position: relative;
+  top: -3%;
+}
+.conteiner{
+  width: 96%;
+  height: 100%;
+  box-shadow: 1px 0 7px gray;
+}
+.img{
+  width: 90%;
+  height: 40%;
+  margin: auto;
+  background-image: url(./img/d1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -5%;
+  left: 3%
+}
+h4{
+  display: inline-block;
+  font-weight: 900;
+  border-bottom: 7px solid red;
+  margin-left: 3%;
+  margin-top: 60%;
+  transform: scaleY(1.3);
+  line-height: 2.1;
+}
+p{
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 8%;
+  margin-left: 3%;
+}
+.i2{
+  background-image: url(./img/d2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.i3{
+  background-image: url(./img/d3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Посмотреть все сервисы */
+article{
+  width: 100%;
+  height: 41vw;
+  background-color: white;
+}
+article a{
+  color: black;
+}
+article div{
+  font-weight: 800;
+  float: right;
+  margin: 5% 5%;
+}
+article div::before{
+  content: "<";
+  margin-right: 10px;
+  transform: scale(.8, 1.3);
+  display: inline-block;
+}
+article div:hover{
+  text-decoration: underline;
+}
+
+/* Подвал */
+footer{
+  width: 100%;
+  height: 30vw;
+}
